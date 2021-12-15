@@ -10,11 +10,8 @@ $ kustomize build | kubectl apply -f -
 ```
 
 ### 替换镜像tag
-> 使用`sed`命令替换镜像tag。
+> 使用`kustomize`命令替换镜像地址。
 ```shell
-# 只替换 deployment 中镜像的tag
-$ IMAGE_TAG=latest make update-deployment-image-tag
-
 # 替换 deployment 中的镜像及tag
 $ IMAGE=httpserver IMAGE_TAG=latest make update-deployment-image
 ```

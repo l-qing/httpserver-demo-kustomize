@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: httpserver
-          image: 190219044/httpserver:argocd-demo
+          image: httpserver:latest
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
